@@ -13,7 +13,10 @@
   },
   "permissions": [
     "contextMenus",
-    "activeTab"
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*"
   ],
   "content_scripts": [
     {
