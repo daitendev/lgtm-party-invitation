@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "LGTM.party invitation",
   "description": "Let's get the party started for the great contributors!",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "action": {
     "default_title": "LGTM.party invitation"
   },
