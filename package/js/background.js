@@ -20,3 +20,8 @@ chrome.runtime.onInstalled.addListener(async () => {
 chrome.contextMenus.onClicked.addListener((item, tab) => {
   chrome.tabs.sendMessage(tab.id, { cmd: 'captureImageSrc', src: item.srcUrl });
 });
+
+chrome.action.onClicked.addListener(function () {
+  chrome.tabs.create({ url: 'https://lgtm.party' })
+
+});
