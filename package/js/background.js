@@ -21,7 +21,6 @@ chrome.contextMenus.onClicked.addListener((item, tab) => {
   chrome.tabs.sendMessage(tab.id, { cmd: 'captureImageSrc', src: item.srcUrl });
 });
 
-chrome.action.onClicked.addListener(function () {
+chrome.action.onClicked.addListener(() => {
   chrome.tabs.create({ url: 'https://lgtm.party' })
-
 });
